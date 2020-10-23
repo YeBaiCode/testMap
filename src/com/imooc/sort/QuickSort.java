@@ -3,6 +3,7 @@ package com.imooc.sort;
 
 /**
  * int[] array=[6,1,2,7,9,3,4,5,10,8]
+ * @author YuFeng
  */
 public class QuickSort {
 
@@ -54,5 +55,11 @@ public class QuickSort {
         //i的索引处为上面已确定好的基准值的位置，无需再处理
         sort(array,left,i-1);
         sort(array,i+1,right);
+    }
+
+
+    public static void main(String[] args) {
+        int[] array={1,5,6,3,7,2,8};
+        quickSort(array);
     }
 }
